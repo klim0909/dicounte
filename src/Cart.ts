@@ -17,8 +17,7 @@ export default class Cart {
 
     getTotalCostWithDiscount(discount: number): number {
         const totalCost = this.getTotalCost();
-        const discountedCost = totalCost - (totalCost * discount) / 100;
-        return discountedCost;
+        return totalCost - (totalCost * discount) / 100;
     }
 
     removeItemById(id: number): void {

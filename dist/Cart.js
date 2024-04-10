@@ -28,8 +28,7 @@ var Cart = /** @class */ (function () {
     };
     Cart.prototype.getTotalCostWithDiscount = function (discount) {
         var totalCost = this.getTotalCost();
-        var discountedCost = totalCost - (totalCost * discount) / 100;
-        return discountedCost;
+        return totalCost - (totalCost * discount) / 100;
     };
     Cart.prototype.removeItemById = function (id) {
         var index = this._items.findIndex(function (item) { return item.year === id; }); // Используем 'year' для определения уникальности элемента

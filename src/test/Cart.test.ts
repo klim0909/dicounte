@@ -1,5 +1,5 @@
-import Cart from './Cart';
-import Buyable from './Buyable';
+import Cart from '../Cart';
+import Buyable from '../Buyable';
 
 describe('Cart', () => {
   let cart: Cart;
